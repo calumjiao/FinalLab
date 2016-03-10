@@ -88,7 +88,7 @@ def story(title1):
         
     return wrapper
 
-with open('Requirements.txt') as f:
+with open('requirements.txt') as f:
     for line in f.readlines():
         if '*"' in line:
             title, desc = line.split('"*', 1)
