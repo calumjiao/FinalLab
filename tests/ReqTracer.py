@@ -62,7 +62,7 @@ def requirements(req_list):
 
     return wrapper
 
-with open('Requirements.txt') as f:
+with open('requirements.txt') as f:
     for line in f.readlines():
         if '#00' in line:
             req_id, desc = line.split(' ', 1)
